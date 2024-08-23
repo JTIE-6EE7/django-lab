@@ -1,4 +1,4 @@
-name: tdd-cicd
+name: django-pipeline
 on:
   push:
     branches: [main]
