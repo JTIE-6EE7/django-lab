@@ -19,10 +19,10 @@ jobs:
           pip install pytest flake8 bandit pylint black
       - name: Run tests and linting
         run: |
+          black --check
           #pytest -v
           #flake8 
           #isort src test --check
-          black --check
           #bandit -r -s B101 src test
           #pylint src/
 
